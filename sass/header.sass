@@ -1,0 +1,187 @@
+@import "bourbon"
+@import "var.sass"
+@import "app/libs/owl.carousel/dist/assets/owl-carousel"
+*
+	box-sizing: border-box
+.hidden
+	display: none
+body
+	overflow-x: hidden
+ul
+	list-style: none
+p
+	cursor: pointer
+	font-family: $OpenSansR, sans-serif
+h1,h2,h3,h4,h5,h6
+	font-family: $OpenSansSB, sans-serif
+	cursor: pointer
+.header
+	position: relative
+	&-line
+		height: 5px
+		background: linear-gradient(to right, rgba(21,183,153,1) 0%, rgba(21,183,153,1) 30%, rgba(0,130,173,1) 30%, rgba(0,130,173,1) 70%, rgba(19,58,129,1) 70%, rgba(19,58,129,1) 100%)
+	&-top
+		padding: 43px 0px 45px 0
+		display: flex
+		background: #fff
+		position: relative
+		.fa
+			color: $greyCol
+			margin-right: 10px
+		&-logo
+			margin: -15px 0 0 25px
+		&-text
+			margin: -5px 0 0 20px
+			color: $blueCol
+			letter-spacing: .2px
+			font-size: em(20px)
+			font-family: $OpenSansL, sans-serif
+			line-height: 2
+			&-bold
+				font-family: $OpenSansSB, sans-serif
+		&-contact
+			margin-left: 5px
+			&-phone
+				color: $greenCol
+				font-size: em(28px)
+				margin: -10px 25px 15px 0
+				font-family: $OpenSansR, sans-serif
+				letter-spacing: 1.1px
+				&-light
+					font-family: $OpenSansL, sans-serif
+			&-email
+				display: inline-block
+	&-menu
+		position: relative
+		background-color: #ececec
+		margin-top: -15px
+		&-list
+			margin: 0
+			&-drop
+				position: absolute
+				z-index: -1
+				left: 0
+				right: 0
+				margin: 0
+				padding: 0
+				background: $blueColDrop
+				transition: all .3s ease
+				color: #fff
+				transform: translateY(15px)
+				box-shadow: 5px 5px 19px -4px rgba(0,0,0,0.75)
+				&-item
+					padding: 11px 17px
+					font-weight: normal
+					text-transform: none
+					font-size: em(17px)
+					&:hover
+						background: $blueColAccent
+						box-shadow: inset 0px 17px 0px -16px rgba(255,255,255,.5), inset 0px -15px 0px -15px rgba(255,255,255,.5)
+			.drop
+				opacity: 1
+				z-index: 8
+			&-item
+				position: relative
+				display: inline-block
+				padding: 15px 85px
+				text-transform: uppercase
+				font-size: em(17px)
+				font-weight: bold
+				font-family: $OpenSansR
+				cursor: pointer
+				transition: all .3s ease
+				margin-left: 0px
+				&:hover
+					background-color: $blueColAccent
+					color: #fff
+				&:nth-child(2)
+					margin-left: 15px
+					margin-right: 38px
+				&:first-child
+					margin-right: 0
+					margin-left: -100px
+	&-slider
+		background: url(../img/header/slider/slider-bg.jpg) 0 0 no-repeat
+		background-size: cover
+		.owl-dots
+			width: 100%
+			position: absolute
+			bottom: 15px
+			left: 24.15%
+			.owl-dot
+				display: inline-block
+				width: 11px
+				height: 11px
+				border-radius: 50px
+				border: 1px solid #fff
+				margin-right: 10px
+				margin-left: 2px
+			.active
+				background: #fff
+		.owl-nav
+			font-size: em(20px)
+			color: #fff
+			.owl-prev
+				position: absolute
+				top: 47.5%
+				right: 21%
+				transform: translateY(-55%)
+				width: 18px
+				height: 81px
+				background: url(../img/header/slider/left.png)
+			.owl-next
+				position: absolute
+				top: 47.5%
+				left: 22%
+				transform: translateY(-55%)
+				width: 18px
+				height: 81px
+				background: url(../img/header/slider/right.png)
+		&-item
+			padding: 65px 0px 85px 15px
+			&-h2
+				margin: 0 0 0 0
+				font-size: em(40px)
+				font-family: $OpenSansB,sans-serif
+				color: #fff
+				text-shadow: 1.5px 2.598px 3px rgba(0, 0, 0, 0.1)
+				font-weight: bold
+			  text-align: left
+				letter-spacing: .75px
+			&-text
+				color: #fff
+				font-size: em(22px)
+				text-align: left
+				line-height: 1.5
+				margin: 12px 0 0 0px
+				letter-spacing: .2px
+			&-button
+				color: #000
+				padding: 15px 45px
+				margin: 32px 0 25px 15px
+				display: inline-block
+				border-radius: 2px
+				font-family: $OpenSansSB ,sans-serif
+				font-size: em(19px)
+				text-transform: uppercase
+				background: linear-gradient( 90deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%)
+				box-shadow: 0px 2px 2px 0px rgba(224, 97, 97, 0.5),inset 0px 2px 0px 0px rgba(255, 255, 255, 0.004)
+				&:hover
+					color: inherit
+					text-decoration: none
+				&:link
+					color: inherit
+					text-decoration: none
+				&:visited
+					color: inherit
+			.slide-link
+				color: #fff
+				text-decoration: underline
+				font-family: $OpenSansL, sans-serif
+				font-size: em(18px)
+				display: block
+				margin-bottom: 85px
+			&-img
+				position: absolute
+				bottom: 0
+				right: 418px

@@ -1,0 +1,431 @@
+@import "bourbon"
+@import "var.sass"
+
+//Load Libs SASS
+@import "app/libs/font-awesome/css/font-awesome"
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+.icons
+	background: #fff
+	padding: 50px 0 57px 20px
+	&-h2
+		text-align: center
+		font-family: $OpenSansSB
+		font-size: 34px
+		color: $blueColDark
+		margin-bottom: 45px
+	&-wrap
+		padding-left: 40px
+		.center
+			margin-left: 120px
+			margin-right: 30px
+	&-item
+		text-align: center
+		position: relative
+		&-wrap
+			position: relative
+			display: inline-block
+			border: 3px solid darken($greenCol,20%)
+			border-radius: 60px
+			padding: 53px
+			margin-bottom: 5px
+			&-img
+				position: absolute
+				top: 21.5%
+				left: 27%
+				text-align: center
+				height: 48px
+				width: 60%
+				margin-top: 10px
+		&-h4
+		 font-size: em(18px)
+		 margin: 10px 0 0 0 0
+		&-text
+			margin: 0
+			font-size: em(15px)
+			font-weight: bolder
+.conditions
+	background: transparent
+	background-size: cover
+	padding: 50px 0 30px 20px
+	color: #fff
+	&-h2
+		text-align: center
+		font-family: $OpenSansSB
+		font-size: 34px
+		color: #fff
+		margin-bottom: 45px
+	&-wrap
+		padding-left: 40px
+		.center
+			margin-left: 120px
+			margin-right: 30px
+	&-item
+		text-align: center
+		position: relative
+		&-wrap
+			position: relative
+			display: inline-block
+			border: 3px solid darken($greenCol,20%)
+			border-radius: 60px
+			padding: 60px
+			margin-bottom: 0px
+			&-img
+				position: absolute
+				text-align: center
+				height: 68px
+				width: 61%
+				margin-top: 10px
+				background-repeat: no-repeat
+		&-h4
+		 display: block
+		 font-size: 21px
+		 text-transform: uppercase
+		 font-family: $OpenSansL,sans-serif
+		&-text
+			margin: 10px
+			font-size: em(15px)
+			font-weight: bolder
+.solve
+	background: url(../img/solve/bg.jpg) 0 0 no-repeat
+	background-size: cover
+	padding: 50px 0 4px 45px
+	ul
+		padding: 0
+	h3
+		margin: 0
+		padding: 0
+	&-h2
+		font-family: $OpenSansSB, sans-serif
+		font-size: em(35px)
+		color: darken($greenCol,20%)
+		margin: 0
+	&-text
+		font-size: em(21px)
+		&-bold
+			font-family: $OpenSansB, sans-serif
+	&-list
+		margin-top: 50px
+		&-item
+			display: flex
+			margin-bottom: 55px
+			&-img
+				align-items: flex-end
+				padding: 0px
+				border: 3px solid $blueCol
+				border-radius: 75px
+				margin-right: 20px
+				&-icon
+					position: relative
+					top: 35%
+					left: 20%
+					width: 120px
+					height: 120px
+			&-text
+					width: 60%
+.green
+	color: #fff
+	background-color: lighten(darken($greenCol,30%),15%)
+	font-weight: bold
+  line-height: 1.324
+  text-align: left
+	padding: 45px 0 15px 75px
+	&-h2
+		font-size: em(40px)
+		margin: 0 0 -5px 0
+		padding: 0
+		text-shadow: 1.5px 2.598px 3px rgba(0, 0, 0, 0.1)
+	&-text
+		font-family: $OpenSansL
+		font-size: em(40px)
+		text-shadow: 1.5px 2.598px 3px rgba(0, 0, 0, 0.1)
+.seo
+	background: transparent
+	background-size: cover
+	padding: 60px 0 115px 0
+	position: relative
+	z-index: 0
+	&::after
+		content: ''
+		background: $blueColDark
+		position: absolute
+		width: 330px
+		height: 330px
+		opacity: 0.5
+		right: 31%
+		top: 105px
+		z-index: -1
+	h3
+		margin: 0
+		padding: 0
+	&-item
+		background: #fff
+		padding: 25px 30px 156px 28px
+		position: relative
+		margin-left: -10px
+		margin-right: -30px
+		&::before
+			content: ''
+			background: url(../img/seo/logo.png) no-repeat
+			width: 140px
+			height: 85px
+			position: absolute
+			bottom: 14px
+			left: 30px
+			opacity: .5
+		&::after
+			content: 'CEO Global Factoring Network, Приманченко Алексей'
+			font-family: $OpenSansB
+			position: absolute
+			right: 35px
+			bottom: 30px
+			line-height: 2
+			width: 240px
+			font-weight: bold
+		&-text
+			font-size: em(18px)
+.parthners
+	background: lighten($greyCol,15%)
+	padding: 50px 0 55px 0
+	.icons-h2
+		font-size: em(35px)
+		margin-left: 10px
+		margin-bottom: 55px
+	&-list
+		&-item
+			display: inline-block
+			background-color: #fff
+			margin-right: 22.2px
+.comments
+	position: relative
+	background: url(../img/comments/bg.jpg) 0 0 no-repeat
+	padding: 50px 0 50px 0
+	.icons-h2
+		font-size: em(35px)
+		margin-left: 10px
+		margin-bottom: 55px
+	.row
+		padding-bottom: 80px
+		padding-left: 15px
+	&-slide
+		position: relative
+		padding-left: 60px
+		.owl-nav
+			position: absolute
+			display: block!important
+			top: 30%
+			.owl-prev
+				color: red
+				transform: translateX(-30px)
+				background: url(../img/comments/prev.png) no-repeat
+				width: 11px
+				height: 34px
+			.owl-next
+				position: absolute
+				transform: translate(1070px,-35px)
+				background: url(../img/comments/next.png) no-repeat
+				width: 11px
+				height: 34px
+		&-text
+			margin: 0 0 0 0
+			width: 92%
+			padding: 15px 15px 35px 15px
+			background: linear-gradient(to right, rgba(0,130,173,0.65) 0%, rgba(0,130,173,0.65) 17%, rgba(0,130,173,0.73) 31%, rgba(0,130,173,0.89) 61%, rgba(0,130,173,1) 82%, rgba(0,130,173,1) 100%)
+			border-radius: 6px
+			font-family: $OpenSansI, sans-serif
+			color: #fff
+			font-size: em(17px)
+		&-author
+			position: absolute
+			margin-left: 0px
+			bottom: -10px
+			font-family: $OpenSansSB, sans-serif
+			font-weight: bolder
+.phone
+	background: url(../img/phone/bg.jpg) 0 0 no-repeat
+	background-size: cover
+	text-align: center
+	color: #fff
+	font-size: em(31px)
+	padding: 30px 0 30px 0
+	&-h2
+		margin: 0
+		&-blue
+			color: $blueColDark
+			&-light
+				font-family: $OpenSansL
+				font-weight: lighter
+.know
+	padding: 19px 0 60px 0
+	position: relative
+	.center
+		margin-left: 80px
+		margin-right: -15px
+	&-h2
+		margin-bottom: 45px
+		margin-left: 20px
+		color: $blueColDark
+	.first
+		margin-left: 55px
+	.arrow-1
+		text-transform: uppercase
+		position: absolute
+		right: 56.4%
+		top: 45.5%
+		font-size: em(19px)
+		font-family: $OpenSansB, sans-serif
+		color: $greyCol
+		background: url(../img/know/arrow.png) no-repeat
+		background-position: bottom
+		padding-bottom: 30px
+	.arrow-2
+		text-transform: uppercase
+		position: absolute
+		left: 56.7%
+		top: 45%
+		font-size: em(19px)
+		font-family: $OpenSansB, sans-serif
+		color: $greyCol
+		background: url(../img/know/arrow.png) no-repeat
+		background-position: bottom
+		padding-bottom: 30px
+	&-h4
+		color: darken($greenCol,20%)
+		font-family: $OpenSansB, sans-serif
+		font-size: em(30px)
+		margin: 15px 0 0 0
+	&-text
+		margin: 5px 0 0 0
+		font-family: $OpenSansB, sans-serif
+		font-size: em(18px)
+.form
+	background: lighten($greyCol,15%) url(../img/form/bg.png) 10% 99% no-repeat
+	padding: 50px 0 115px 20px
+	position: relative
+	&::after
+		content: ''
+		background: linear-gradient(to right, rgba(21,183,153,1) 0%, rgba(21,183,153,1) 30%, rgba(0,130,173,1) 30%, rgba(0,130,173,1) 70%, rgba(19,58,129,1) 70%, rgba(19,58,129,1) 100%)
+		position: absolute
+		left: 0px
+		bottom: 0
+		right: 0
+		height: 5px
+	&::before
+		content: 'Global Factoring Network'
+		font-family: $OpenSansSB, sans-serif
+		font-size: em(60px)
+		transform: rotate(90deg)
+		opacity: .05
+		text-transform: uppercase
+		position: absolute
+		right: -40px
+		top: -10px
+	&-h2
+		color: $blueColDrop
+		font-size: em(44px)
+		margin: 0
+	&-text
+		margin: 0
+		color: $blueColDrop
+		font-size: em(32px)
+		&-green
+			color: lighten(darken($greenCol,30%),15%)
+			text-transform: uppercase
+	&-contact
+		display: flex
+		flex-flow: column
+		&-text
+			margin: 55px 110px 30px 0
+			padding: 15px
+			border: none
+			border-radius: 6px
+			font-family: $OpenSansR
+			font-size: em(19px)
+		&-button
+			margin: -15px 110px 30px 0
+			padding: 14px
+			border: none
+			font-size: em(22px)
+			font-family: $OpenSansSB, sans-serif
+			box-shadow: 0px 3px 0px 0px rgba(206, 91, 91, 0.98)
+			border-radius: 6px
+			background-color: rgb(255, 112, 112)
+			&:hover
+				box-shadow: none
+footer
+	padding: 46px 0 40px 0
+	position: relative
+	.bottom
+		&-about
+			margin-top: 0px
+		&-contact
+			margin-top: -20px
+			&-phone
+				color: darken($greenCol,20%)
+			&-adress
+				font-weight: bolder
+				font-size: em(18px)
+			.fa
+				color: $greyCol
+				margin-right: 10px
+				font-size: em(20px)
+				&-map-marker
+					font-size: em(25px)
+				&-fa-phone
+		&-list
+			margin: 10px 0 0 -10px
+			padding: 0
+			&-social
+				display: inline-block
+				margin-left: 5px
+				.fa
+					color: #fff
+					font-size: em(15px)
+					border-radius: 25px
+				.fa-instagram
+					background: #529ac4
+					padding: 8px
+				.fa-odnoklassniki
+					padding: 8px 10px 8px 10px
+					font-size: em(15px)
+					background: #ff7700
+				.fa-facebook
+					background-color: $blueColDark
+					padding: 8px 11px 8px 11px
+				.fa-vk
+					font-size: em(15px)
+					background-color: $blueColDark
+					padding: 9px 8px 9px 8px
+		&-copy
+			padding: 13px 13px 15px 13px
+			position: absolute
+			right: 0
+			left: 0
+			bottom: 0px
+			background: lighten($greyCol,15%)
+			text-align: center
+			font-size: em(13px)
+//ALWAYS END
+@import "media"
