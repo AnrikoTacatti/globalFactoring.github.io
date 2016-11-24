@@ -28,11 +28,11 @@ $(function(){
    dots: true
  });
  condSect.parallax({
-   imageSrc: '../img/conditions/bg.jpg',
+   imageSrc: 'img/conditions/bg.jpg',
    speed: 0.1
  });
  seoSect.parallax({
-   imageSrc: '../img/seo/bg.jpg',
+   imageSrc: 'img/seo/bg.jpg',
    speed: 0.1,
  });
  bottomSlide.owlCarousel({
